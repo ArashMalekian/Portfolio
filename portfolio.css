@@ -1,0 +1,390 @@
+
+/* Container */
+
+ * , ::before , ::after {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ text-align: center;
+ margin: 0;padding: 0;
+ box-sizing: border-box;
+} 
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+body{
+     background: black;
+    
+}
+
+/* elevator */
+
+.btncont{
+    text-align: center;
+}
+
+#btn {
+    transition: all 1s linear;
+    border-radius: 50%;
+    z-index: 999;
+    background-color: white;
+    color: black;
+    position: fixed;
+    margin-top: 90vh;
+    font-weight: bold;
+    border: 2px solid black;
+
+}
+
+/* Header */
+
+.navbar{
+ transition: all 1s linear;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ border-radius: 0px 0px 10px 10px;
+ background: linear-gradient(225deg, #232323, #080808);
+ box-shadow:  -21px 21px 32px #111111,
+              21px -21px 32px #313131;    
+              /* border-radius: 0px;
+              background: linear-gradient(225deg, #fefefe, #d5d5d5);
+              box-shadow:  -21px 21px 32px #797979,
+                           21px -21px 32px #ffffff; */
+}
+.logoimg {
+    width: 80px;height: 80px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s linear;
+}
+
+.navul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.navli {
+    margin: 8px;
+    transition: all .7s linear;
+}
+
+.navli:hover{
+    color: darkorange ;
+    cursor: pointer;
+    opacity: 0.8; 
+    /* background: -webkit-linear-gradient(rgb(255, 255, 255), darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  
+}  
+
+.logoimg:hover{
+    animation-name: goup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes goup {
+    100%{
+        transform: translate(0,-15%)
+    }
+}
+
+
+
+
+
+
+
+
+
+/* wellcome' */
+
+.wellcomearticle{
+    background: url(Pics/40107-download-wallpaper-1366x768-art-surface-grunge-paint-tablet-laptop-hd-background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: all 5s linear;
+}
+
+.wellcomebox{
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+
+.wellcometext{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    opacity: 0;
+    transition: all 1s linear;
+    font-size: 10rem;
+
+}
+
+
+
+
+
+
+
+
+
+/* First Article */
+
+.firstarticle {
+    background: url(Pics/bgb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    
+}
+
+
+
+.aboutmetext blockquote{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.aboutmepic img{
+    width: 300px;height: 300px;
+}
+
+.divider{
+    width: 100%;
+    height: 10px;
+    background: url(Pics/bgbasic.jpg);
+    margin-bottom: 10px;
+}
+
+.projectitem img{
+    width: 400px;height: 350px;
+}
+
+
+.projectitem img:hover{
+    animation-name: goup;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+ .plaque{
+    width: 140px !important;height: 140px !important;
+}
+
+/* ads */
+
+.contactme{
+    background: url(Pics/last-supper-4997322.png)  center/cover fixed no-repeat  ;
+    opacity: 80%;
+}
+
+.contactbox{
+    border-color: #080808;
+    opacity: 0.5;
+    height: 500px;width: 80%;
+}
+
+/* secondarticle */
+
+.secondarticle{
+    background:url(Pics/bgb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+    
+}
+
+.skillcont{
+    height: 100%;
+}
+
+.skillcol{
+    height: 650px;
+}
+
+.skillitem{
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px grey;
+    transition: all 1s linear;
+    align-content: center;
+}
+
+.skillitem:hover {
+    box-shadow: none;
+    opacity: 0.5;
+}
+
+#html{
+    width: 100%;
+    height: 50%;
+    background: url(Pics/ambassadors.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+
+
+
+.skillitem img{
+    visibility: hidden;
+    transition: all 1s linear;
+}
+
+.skillitem:hover img{
+    visibility: visible;
+}
+
+
+
+
+
+#sass{
+    width: 100%;height: 20%;
+    background: url(Pics/1443px-Jean-François_Millet_-_Gleaners_-_Google_Art_Project_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#figma{
+    width: 100%;height: 30%;
+    background: url(Pics/1578px-Great_Wave_off_Kanagawa2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#css{
+    width: 100%;height: 25%;
+    background: url(Pics/Vassily_Kandinsky\,_1923_-_Composition_8\,_huile_sur_toile\,_140_cm_x_201_cm\,_Musée_Guggenheim\,_New_York.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#javascript{
+    width: 100%;height: 55%;
+    background: url(Pics/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#bootstrap{
+    width: 100%;height: 20%;
+    background: url(Pics/Guernica_museum_sofia_queen_on_july_2018.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#git{
+    width: 100%;height: 20%;
+    background: url(Pics/3840px-Raffael_058_\(cropped\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#redux{
+    width: 100%;height: 35%;
+    background: url(Pics/1841px-21_Gigapixel_Total_Renovation_of_Girl_with_a_Pearl_Earring-Digital_Profoundism-Demo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+#react{
+    width: 100%;height: 45%;
+    background: url(Pics/2728px-Van_Gogh_-_Starry_Night_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+
+
+
+
+/* contact me */
+
+.contactmebox{
+    padding: 12%;
+}
+
+.contactitem{
+    width: 100px;height: 100px;
+}
+
+.contactitem img{
+    width: 60%;
+    height: 50%;
+    transition: all .6s linear;
+}
+
+.contactitem img:hover{
+    opacity: 0.4;
+}
+
+
+/* footer */
+
+footer{
+    border-radius: 0px;
+    background: linear-gradient(225deg, #000000, #080808);
+box-shadow:  -20px 20px 60px #000000,
+             20px -20px 60px #000000;
+}
+
+footer img{
+    width: 100px;height: 100px;
+}
+
+footer h5 {
+    color: whitesmoke;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+footer h6{
+    color: rgb(63, 63, 63);
+    font-weight: lighter;
+}
+
+footer ul{
+    list-style: none;
+    color: grey;
+}
+
+footer a{
+    margin:0 8px;
+    transition: all .5s linear;
+
+}
+
+footer a:hover{
+    color: darkorange;
+    opacity: 0.5;
+}
